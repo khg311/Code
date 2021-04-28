@@ -39,3 +39,33 @@ elif bitcoin<0:
     print("bitcoin short")
 else:
     print("bitcoin stay")
+
+# for문
+ripple=range(1,10) # 1~9까지 나옴
+for num in ripple:
+    print(num)
+for value in portfolio:
+    print(value)
+for ticker in prices: # key가 나옴
+    print(ticker)
+for ticker, price in prices.items(): # 1. key, item을 같이 출력할때 사용
+    print(ticker, price)
+for ticker in prices:                # 2. key, item을 같이 출력
+    print(ticker, prices[ticker])
+
+# while문
+num=1
+while True: # 조건문이 True일때까지 계속 돌아감
+    if num==10:
+        break # 조건만족시 while문 빠져나감
+    print(num)
+    num=num+1
+
+# function
+def hap(a,b):
+    ret=a+b
+    return ret
+
+hap(1,2)
+
+# module : 
