@@ -68,4 +68,21 @@ def hap(a,b):
 
 hap(1,2)
 
-# module : ㅇㄹ
+# module : 파이썬 파일을 의미함
+import grammer  # r에서 source와 동일함
+grammer.get_open_price("BTC")
+grammer.get_close_price("BTC")
+
+import datetime
+now=datetime.datetime.now()
+print(now)
+
+import requests
+resp=requests.get("https://api.bithumb.com/public/ticker/BTC")
+print(resp)
+print(resp.content)
+
+# 클래스 : 데이터 + 함수를 묶어놓은것
+a=3
+print(type(a))
+print(a.bit_length())
